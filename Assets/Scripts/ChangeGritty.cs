@@ -19,7 +19,7 @@ namespace Unity.U2D.Animation.Sample
                 catList.Add(cat);
                 Debug.Log("Categories = " + cat);
             }
-            foreach(string lab in resolver.spriteLibrary.spriteLibraryAsset.GetCategorylabelNames(catList[0])){
+            foreach(string lab in resolver.spriteLibrary.spriteLibraryAsset.GetCategoryLabelNames(catList[0])){
                 labelList.Add(lab);
                 Debug.Log("Label = " + lab);
             }
