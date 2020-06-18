@@ -25,8 +25,8 @@ MonoBehaviour:
     - m_Name: Yellow Shirt
       m_Hash: 568747851
       m_Sprite: {fileID: 21300000, guid: 6f00f7cc2083e4342b84ba131a27ad86, type: 3}
-  - m_Name: Yellow Grittys
-    m_Hash: -1564183063
+  - m_Name: Blue Grittys
+    m_Hash: -778967839
     m_CategoryList:
     - m_Name: Orange Shirt
       m_Hash: -1113404549
@@ -37,8 +37,8 @@ MonoBehaviour:
     - m_Name: Yellow Shirt
       m_Hash: 568747851
       m_Sprite: {fileID: 21300000, guid: aa4695496a405bc4496c767bb15e4d15, type: 3}
-  - m_Name: Blue Grittys
-    m_Hash: -778967839
+  - m_Name: Yellow Grittys
+    m_Hash: -1564183063
     m_CategoryList:
     - m_Name: Orange Shirt
       m_Hash: -1113404549

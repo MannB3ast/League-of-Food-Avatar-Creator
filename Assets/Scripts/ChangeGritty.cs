@@ -10,10 +10,12 @@ namespace Unity.U2D.Animation.Sample
     public class ChangeGritty : MonoBehaviour
     {
         private SpriteResolver resolver;
+        private SpriteLibraryAsset currentSpriteLibrary;
         // Start is called before the first frame update
         void Start()
         {
             resolver = GetComponent<SpriteResolver>();
+            currentSpriteLibrary = resolver.spriteLibrary.spriteLibraryAsset;
         }
 
         internal void UpdateSelectionChoice()
@@ -26,7 +28,11 @@ namespace Unity.U2D.Animation.Sample
         }
 
         public void ToggleGritty(){
-            resolver.SetCategoryAndLabel("Yellow Grittys", "Yellow Shirt");
+            IEnumerator<string> catList = currentSpriteLibrary.GetCategoryNames().GetEnumerator();
+            IEnumerable<string> labelList = currentSpriteLibrary.GetCategorylabelNames(catList.Current);
+            catList.MoveNext(); //iterate to next category
+            resolver.SetCategoryAndLabel(catList.Current, "Yellow Shirt");
+            
             // if(index < spriteLibraries.Length - 1){
             //     index++;
             // } else {
