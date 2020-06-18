@@ -43,6 +43,18 @@ namespace Unity.U2D.Animation.Sample
             UpdateSprite();
         }
 
+        public void StartHeadbangAnimation(){
+            GetComponent<Animator>().SetTrigger("StartHeadbang");
+        }
+
+        public void StartDanceAnimation(){
+            GetComponent<Animator>().SetTrigger("StartDance");
+        }
+
+        public void StartIdleAnimation(){
+            GetComponent<Animator>().SetTrigger("Idle");
+        }
+
         void UpdateSprite(){
             resolver.SetCategoryAndLabel(catList[catIndex], labelList[labelIndex]);
         }
